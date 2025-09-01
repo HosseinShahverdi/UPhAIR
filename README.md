@@ -1,3 +1,50 @@
+# UPAIR Project - File Structure and Code Organization
+
+## Project Structure:
+```
+UPAIR/
+├── README.md
+├── requirements.txt
+├── setup.py
+├── src/
+│   ├── __init__.py
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── radiomics_extractor.py
+│   │   └── data_loader.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── classifiers.py
+│   │   └── model_trainer.py
+│   ├── interpretability/
+│   │   ├── __init__.py
+│   │   ├── shap_analyzer.py
+│   │   └── feature_importance.py
+│   ├── retrieval/
+│   │   ├── __init__.py
+│   │   ├── paper_retriever.py
+│   │   ├── embedding_engine.py
+│   │   └── faiss_indexer.py
+│   ├── report_generation/
+│   │   ├── __init__.py
+│   │   ├── llm_explainer.py
+│   │   └── report_formatter.py
+│   └── utils/
+│       ├── __init__.py
+│       └── text_processing.py
+├── notebooks/
+│   └── UPAIR_demo.ipynb
+├── data/
+│   └── README.md
+├── outputs/
+│   └── README.md
+└── tests/
+    ├── __init__.py
+    └── test_basic.py
+```
+
+## File Contents:
+
 ### README.md
 ```markdown
 # UPAIR: Understandable Post-hoc AI Reports
@@ -148,3 +195,4 @@ tqdm>=4.65.0
 google-generativeai>=0.3.0
 pillow>=9.5.0
 markdown>=3.4.3
+```
